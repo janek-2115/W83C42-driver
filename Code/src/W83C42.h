@@ -139,7 +139,7 @@ private:
     };
     volatile char	    buffer[128] = { 0 };
     uint8_t			    command;
-    uint8_t			    statu;
+    uint8_t			    status;
     uint8_t			    CS;
     uint8_t			    WR;
     uint8_t			    RD;
@@ -147,6 +147,7 @@ private:
     uint8_t			    RST;
     uint8_t			    INT;
     uint8_t			    DATAPINS[8];
+    bool                translate = true;
     volatile uint8_t    start;
     volatile uint8_t    end;
     volatile bool SHIFT_PRESSED = false;
@@ -171,6 +172,8 @@ public:
     void	sendCommand(uint8_t data);
     void	disableKeyboardInterface();
     void	enableKeyboardInterface();
+    void	enableTranslation();
+    void	disableTranslation();
     void	waitForIBF();
     void	waitForOBF();
     uint8_t	in(bool command, bool interrupt);

@@ -244,6 +244,12 @@ void	W83C42::enableKeyboardInterface() {
 	out(0xAE, true);
 	delayMicroseconds(10);
 }
+void	W83C42::enableTranslation(){
+	this->translate = true;
+}
+void	W83C42::disableTranslation() {
+	this->translate = false;
+}
 void	W83C42::waitForIBF() {
 	/*
 	  Description:
