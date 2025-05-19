@@ -15,7 +15,7 @@ This is a simple arduino driver for the Winbond W83C42 keyboard controller for P
 - The inverter setup shown on the schematic is not neccesary if youre not going to be sending commands *directly to the keyboard*, if that is the case, leave the KB_CLK_OUT and KB_DATA_OUT pins not connected.
 - Both the code and the schematic *should* be compatible with other keyboard controllers of this type ie. 8042, 80C42, 82C42. Unfortunately i couldnt get it to work with either 80C42 (unmarked, but taken out of a 80286 MOBO) or the Mitsubishi M5L8042. I never found out the reason they didnt work, they migh have been damaged before i got them.
 - The code works, but is not finished, i will try to update it in upcoming days/weeks.
-## A picture if the W83C42 chip in the DIP40 package:
-![Picture of the chip](W83C42.JPG)
+## A picture of the W83C42 chip in the DIP40 package:
+![Picture of the chip](W83C42.jpg)
 ## A picture of the schematic diagram:
 ![Picure of the schematic](Schematic/schematic.PNG)
