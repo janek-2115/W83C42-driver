@@ -3856,7 +3856,7 @@
 		)
 		(uuid "7bf73814-8b0e-4cd0-9463-bf36a7b871a5")
 	)
-	(text "R1: 10K			C3: 10u\nR2: 1M			C4: 1u\nC1: 18p-22p		C5: 100n\nC2: 18p-22p		C6: 100n"
+	(text "R1: 10K			C3: 10u\nR2: 1M				C4: 1u\nC1: 18p-22p		C5: 100n\nC2: 18p-22p		C6: 100n"
 		(exclude_from_sim no)
 		(at 20.574 29.464 0)
 		(effects
