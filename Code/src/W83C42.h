@@ -159,17 +159,20 @@ public:
         uint8_t D6, uint8_t D7, uint8_t CS,
         uint8_t WR, uint8_t RD, uint8_t RST,
         uint8_t A2, uint8_t INT);
-    void    BUFFER_ISR();
-    static void	ISR_WRAPPER();
+
     bool	begin();
     void	disable();
     void	enable();
     int	    readBuffer(char* buffer, int maxLen);
     uint8_t	selfTest(bool print);
-    uint8_t readInputPort(bool print);
+    uint8_t interfaceTest(bool print);
     uint8_t readStatus(bool print);
     uint8_t readCommand(bool print);
-    void	sendCommand(uint8_t data);
+    uint8_t readInputPort(bool print);
+    uint8_t readOutputPort(bool print);
+    uint8_t readTestInputs(bool print);
+    void    writeOutputPort(uint8_t data);
+    void	writeCommand(uint8_t data);
     void	disableKeyboardInterface();
     void	enableKeyboardInterface();
     void	enableTranslation();
@@ -180,5 +183,7 @@ public:
     void	out(uint8_t data, bool command);
     void	pinInput() const;
     void	pinOutput() const;
+    void    BUFFER_ISR();
+    static void	ISR_WRAPPER();
 };
 

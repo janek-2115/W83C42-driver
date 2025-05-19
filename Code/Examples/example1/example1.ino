@@ -12,13 +12,13 @@ char buffer[32] = {0};
 
 void setup() {
   Serial.begin(9600);
-  if(Controller.begin()){     // Performs a reset routine and a self check.
-    Controller.enable();      // Enables the keyboard interface
+  if(Controller.begin()){               // Performs a reset routine and a self check.
+    Controller.enable();                // Enables the keyboard interface, the OBF INT and attatches the interrupt to the pin supplied in the constructor
   }
 }
 
 void loop() {
-  delay(1);
+  delay(2);                             // This delay is needed 
   int size = Controller.readBuffer(buffer, 32);
   for(int i = 0; i < size; i++){
     Serial.print(buffer[i]);

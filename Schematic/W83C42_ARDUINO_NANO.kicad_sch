@@ -6669,7 +6669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://theretroweb.com/chip/documentation/w83c42-6754b67123cf0399527016.pdf"
 			(at 143.51 86.36 0)
 			(effects
 				(font
