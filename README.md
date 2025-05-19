@@ -13,7 +13,7 @@ The chip needs an external clock source to work, the source can be either synchr
 - Enjoy :DDDD !
 
 ## Some important details
-- I personally tested the code, and the schematic with an Arduino Nano and an Acer 6511 TW (PS2, AT/XT keyboard)
+- I personally tested the code, and the schematic with an Arduino Nano and an Acer 6511 TW (PS2, SC Set 2 keyboard)
 - This chips is very finicky, i have worked very hard to get it working and even after all this time now and again it acts weirdly after i change something.
 - The inverter setup shown on the schematic is not neccesary if youre not going to be sending commands *directly to the keyboard*, if that is the case, leave the KB_CLK_OUT and KB_DATA_OUT pins not connected.
 - Both the code and the schematic *should* be compatible with other keyboard controllers of this type ie. 8042, 80C42, 82C42. Unfortunately i couldnt get it to work with either 80C42 (unmarked, but taken out of a 80286 MOBO) or the Mitsubishi M5L8042. I never found out the reason they didnt work, they migh have been damaged before i got them.
