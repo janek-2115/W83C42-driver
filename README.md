@@ -2,7 +2,7 @@
 This is a simple arduino driver for the Winbond W83C42 keyboard controller for PS2/AT keyboards. 
 ## Introduction
 The W83C42 is a keyboard controller designed for Intels 386 DX/SX and 486 DX/SX CPUs, but also compatible with older ones. The controller receives serial data from the keyboard, and has an option to interrupt the CPU when the keyboard data is ready to be read from the output buffer. The chips can "translate" received snacodes from AT (SC Set 2) to XT (SC Set 1). The chips is **hardwired** to work as a keyboard controller, instead of using a software implementation - thats how the original Intel 8042 worked - which makes it considerable faster, *in theory*.
-The chip needs an external clock source to work, the source can be either synchronous or asynchronous to the CPU clock, either way, the clock needs to be betweem 6 and 12MHz.
+The chip needs an external clock source to work, the source can be either synchronous or asynchronous to the CPU clock, either way, the clock needs to be between 6 and 12MHz.
 
 ### To use it:
 - Download the source files.
