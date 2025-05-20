@@ -8,7 +8,7 @@ The chip needs an external clock source to work, the source can be either synchr
 - Download the source files.
 - Create a new folder called "W83C42" in your local folder with arduino libraries.
 - Add the source files to the folder.
-- If youre not familiar with the W83C42, i added a KiCad schematic schowing the basic setup of how to connect it up to an Arduino Nano (or any arduino), if you dont have Kicad i also added a PNG file. You can also check out the [schematic](https://theretroweb.com/chip/documentation/w83c42-6754b67123cf0399527016.pdf).
+- If youre not familiar with the W83C42, i added a KiCad schematic schowing the basic setup of how to connect it up to an Arduino Nano (or any arduino), if you dont have Kicad i also added a PNG file. You can also check out the [datasheet](https://theretroweb.com/chip/documentation/w83c42-6754b67123cf0399527016.pdf).
 - After you have connected everything you can run a simple example i included in the "Code" folder.
 - Enjoy :DDDD !
 
